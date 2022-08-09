@@ -7,13 +7,15 @@ import org.springframework.context.annotation.ComponentScans;
 
 @SpringBootApplication
 @ComponentScans({
-		@ComponentScan("com.example.securityEazyByte.controller"),
-		@ComponentScan("com.example.securityEazyByte.config")
+        @ComponentScan("com.example.securityEazyByte.controller"),
+        @ComponentScan("com.example.securityEazyByte.config"),
+        @ComponentScan("com.example.securityEazyByte.model"),
+        @ComponentScan("com.example.securityEazyByte.repo"),
 })
 public class SecurityEazyByteApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(SecurityEazyByteApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(SecurityEazyByteApplication.class, args);
+    }
 
 }
