@@ -66,6 +66,7 @@ public class ProjectSecurityConfig extends WebSecurityConfigurerAdapter {
 
     }
 
+    /*
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth
@@ -75,8 +76,10 @@ public class ProjectSecurityConfig extends WebSecurityConfigurerAdapter {
                 .withUser("user").password("123").authorities("read")
                 .and()
                 .passwordEncoder(NoOpPasswordEncoder.getInstance());
-    }
 
+
+    }
+*/
 
     @Bean
     public PasswordEncoder passwordEncoder() {
