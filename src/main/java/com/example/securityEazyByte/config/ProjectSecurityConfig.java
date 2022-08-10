@@ -66,6 +66,7 @@ public class ProjectSecurityConfig extends WebSecurityConfigurerAdapter {
 
     }
 
+    /* purpose of commenting those line is to log using mysql db
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth
@@ -77,7 +78,7 @@ public class ProjectSecurityConfig extends WebSecurityConfigurerAdapter {
                 .passwordEncoder(NoOpPasswordEncoder.getInstance());
     }
 
-
+*/
     @Bean
     public PasswordEncoder passwordEncoder() {
         return NoOpPasswordEncoder.getInstance();
